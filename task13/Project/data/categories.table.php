@@ -13,3 +13,10 @@ $sql = "CREATE TABLE IF NOT EXISTS `categories`
     {
         echo "DONE";
     }
+
+$sql ="INSERT INTO `categories` (`title`) VALUES 
+('Category 1'),('Category 2'),
+('Category 3'),('Category 4'),
+('Category 5')";
+
+mysqli_query($conn,$sql);

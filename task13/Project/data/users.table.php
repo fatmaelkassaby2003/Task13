@@ -17,3 +17,16 @@ if($result )
 {
 echo "DONE users";
 }
+
+$password = password_hash("password",PASSWORD_ARGON2I);
+
+$sql ="INSERT INTO `users` (`name`,`email`,`phone`,`password`,`role`) VALUES
+('ahmed','ahmed@gmail.com','01011378184','123456','admin'),
+('ali','ali@gmail.com','01011378184','123456','admin'),
+('aya','aya@gmail.com','01011378184','123456','user'),
+('amr','amr@gmail.com','01011378184','123456','user'),
+('shahd','shahd@gmail.com','01011378184','123456','admin'),
+('asmaa','asmaa@gmail.com','01011378184','123456','user')
+";
+
+mysqli_query($conn,$sql);
