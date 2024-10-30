@@ -15,9 +15,9 @@ require_once 'inc/header.php';
                     <!-- Post preview-->
                     <?php foreach($all_data as $post): ?>
                         <div class="post-preview">
-                            <a href="post.html">
+                            <a href="<?php echo 'index.php?page=post&id='. $post['id']; ?>">
                                 <h2 class="post-title"><?= $post['title'] ?></h2>
-                                <h3 class="post-subtitle"><?= substr($post['content'],10) ?></h3>
+                                <h3 class="post-subtitle"><?= substr($post['content'],0,10) ?></h3>
                             </a>
                             <p class="post-meta">
                                 Posted by

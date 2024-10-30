@@ -11,6 +11,7 @@ $routes =
     "about",
     "posts",
     "contact",
+    "post",
 ];
 
 if(isset($_GET['page']))
